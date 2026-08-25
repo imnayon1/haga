@@ -1,0 +1,235 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: https://bejewelled-mooncake-cab1c2.netlify.app
+display_url: https://bejewelled-mooncake-cab1c2.netlify.app
+
+collections:
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - file: "index.html"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Banner Image", name: "banner_image", widget: "image" }
+          - { label: "Profile Photo", name: "profile_image", widget: "image" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title Line", name: "title_line", widget: "string" }
+          - { label: "Department", name: "department", widget: "string" }
+          - { label: "University 1", name: "university", widget: "string" }
+          - { label: "University 2", name: "university2", widget: "string" }
+          - { label: "Quote", name: "quote", widget: "text" }
+          - label: "Bio Paragraphs"
+            name: "bio_paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "num", widget: "string" }
+              - { label: "Suffix (e.g. +)", name: "sup", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - file: "about.html"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Profile Photo", name: "profile_image", widget: "image" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - label: "Banner Tags"
+            name: "banner_tags"
+            widget: "list"
+            field: { label: "Tag", name: "tag", widget: "string" }
+          - label: "Bio Paragraphs"
+            name: "bio_paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "paragraph", widget: "text" }
+          - { label: "Full Name", name: "full_name", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "LinkedIn (display text)", name: "linkedin", widget: "string" }
+          - { label: "Available For", name: "available_for", widget: "string" }
+
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - file: "contact.html"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Heading", name: "page_title", widget: "string" }
+          - { label: "Subheading", name: "page_subtitle", widget: "string" }
+          - { label: "Intro Text", name: "intro_text", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone (display)", name: "phone", widget: "string" }
+          - { label: "Phone (link, no spaces, e.g. +8801XXXXXXXXX)", name: "phone_link", widget: "string" }
+          - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+          - { label: "LinkedIn (display text)", name: "linkedin_label", widget: "string" }
+          - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+          - { label: "Facebook (display text)", name: "facebook_label", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+
+  - name: "skills_data"
+    label: "Skills"
+    files:
+      - file: "_data/skills.yml"
+        label: "Skills"
+        name: "skills"
+        fields:
+          - label: "Skill Bar Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Group Title", name: "title", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Skill Name", name: "name", widget: "string" }
+                  - { label: "Percent (0-100)", name: "pct", widget: "number", value_type: "int", min: 0, max: 100 }
+          - label: "Tag Groups"
+            name: "tag_groups"
+            widget: "list"
+            fields:
+              - { label: "Group Title", name: "title", widget: "string" }
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+
+  - name: "experience_data"
+    label: "Experience"
+    files:
+      - file: "_data/experience.yml"
+        label: "Experience"
+        name: "experience"
+        fields:
+          - label: "Timeline"
+            name: "timeline"
+            widget: "list"
+            fields:
+              - { label: "Date Range", name: "date", widget: "string" }
+              - { label: "Organization", name: "org", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - label: "Bullet Points"
+                name: "bullets"
+                widget: "list"
+                field: { label: "Bullet", name: "bullet", widget: "string" }
+          - label: "Conferences & Certificates"
+            name: "conferences"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Year / Note", name: "year", widget: "string" }
+
+  - name: "education_data"
+    label: "Education (About page)"
+    files:
+      - file: "_data/education.yml"
+        label: "Education"
+        name: "education"
+        fields:
+          - label: "Entries"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Period", name: "period", widget: "string" }
+              - { label: "Degree", name: "degree", widget: "string" }
+              - { label: "School", name: "school", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Badge Text (optional)", name: "badge", widget: "string", required: false }
+              - { label: "Badge Style (optional CSS)", name: "badge_style", widget: "string", required: false }
+
+  - name: "interests_data"
+    label: "Research Interests (About page)"
+    files:
+      - file: "_data/interests.yml"
+        label: "Research Interests"
+        name: "interests"
+        fields:
+          - label: "Entries"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Highlight this card", name: "highlight", widget: "boolean", required: false, default: false }
+
+  - name: "publications_data"
+    label: "Publications"
+    files:
+      - file: "_data/publications.yml"
+        label: "Publications"
+        name: "publications"
+        fields:
+          - label: "Papers"
+            name: "publications"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Authors", name: "authors", widget: "string" }
+              - { label: "Journal", name: "journal", widget: "string" }
+
+  - name: "gallery_data"
+    label: "Gallery Photos"
+    files:
+      - file: "_data/gallery.yml"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Photo", name: "src", widget: "image" }
+              - label: "Category"
+                name: "cat"
+                widget: "select"
+                options: ["portrait", "landscape", "flower", "outdoor", "other"]
+              - { label: "Caption / Title", name: "title", widget: "string" }
+
+  - name: "poems_data"
+    label: "Writing — Poems (Bengali)"
+    files:
+      - file: "_data/poems.yml"
+        label: "Poems"
+        name: "poems"
+        fields:
+          - label: "Poems"
+            name: "poems"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date (as shown, e.g. ১৬/০৭/২০১৮)", name: "date", widget: "string" }
+              - { label: "Poem Text", name: "body", widget: "text" }
+
+  - name: "articles_data"
+    label: "Writing — Articles (English)"
+    files:
+      - file: "_data/articles.yml"
+        label: "Articles"
+        name: "articles"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "cat", widget: "string" }
+              - { label: "Date (as shown, e.g. September 6, 2024)", name: "date", widget: "string" }
+              - { label: "Cover Image", name: "img", widget: "image", required: false }
+              - { label: "Body", name: "body", widget: "text" }

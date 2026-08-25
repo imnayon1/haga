@@ -1,0 +1,177 @@
+---
+layout: null
+title: "Contact"
+page_title: "Get In Touch"
+page_subtitle: "Open to research collaborations, teaching opportunities, and conversations about science."
+intro_text: "I'm always happy to connect with fellow researchers, educators, and science enthusiasts."
+email: "contact@imnayon.dev"
+phone: "+880 1706 992219"
+phone_link: "+8801706992219"
+linkedin_url: "https://www.linkedin.com/in/iqbal-mahamud/"
+linkedin_label: "linkedin.com/in/iqbal-mahamud"
+facebook_url: "https://www.facebook.com/iqbal.nayan.bd"
+facebook_label: "facebook.com/iqbal.nayan.bd"
+location: "Dhaka, Bangladesh"
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — S. M. Iqbal Mahamud</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Plus Jakarta Sans", sans-serif; background: #f0f2f5; color: #1a1a2e; }
+nav { position: fixed; top: 0; left: 0; right: 0; height: 68px; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 52px; border-bottom: 1px solid #ebebeb; z-index: 999; box-shadow: 0 1px 6px rgba(0,0,0,0.05); }
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.nav-circle { width: 38px; height: 38px; border-radius: 50%; background: #7C3AED; color: #fff; font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; }
+.nav-name { font-weight: 800; font-size: 1rem; color: #1a1a2e; }
+.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-links a { color: #555; text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+.nav-links a:hover, .nav-links a.active { color: #7C3AED; }
+.nav-cta { background: #7C3AED; color: #fff !important; padding: 9px 22px; border-radius: 7px; font-weight: 600 !important; }
+.page { padding-top: 68px; }
+.page-header { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 50%, #7C3AED 100%); padding: 60px; }
+.page-header h1 { font-size: 2.4rem; font-weight: 800; color: white; margin-bottom: 8px; }
+.page-header p { color: rgba(255,255,255,0.7); }
+.content { max-width: 1000px; margin: 0 auto; padding: 60px 40px; display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: start; }
+.section-title { font-size: 0.72rem; font-weight: 700; color: #7C3AED; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+.section-title::before { content: ''; display: block; width: 28px; height: 2px; background: #7C3AED; }
+.section-heading { font-size: 1.7rem; font-weight: 800; color: #12122a; margin-bottom: 8px; }
+.section-sub { font-size: 0.9rem; color: #6b7280; margin-bottom: 28px; line-height: 1.7; }
+.contact-links { display: flex; flex-direction: column; gap: 14px; }
+.contact-link { display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: white; border: 1.5px solid #f0f0f0; border-radius: 14px; text-decoration: none; color: #1a1a2e; transition: transform .2s, border-color .2s, box-shadow .2s; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+.contact-link:hover { transform: translateX(6px); border-color: #7C3AED; box-shadow: 0 6px 20px rgba(124,58,237,0.12); }
+.cl-icon { width: 44px; height: 44px; border-radius: 11px; background: #f0ebff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+.cl-label { font-size: 0.7rem; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; }
+.cl-value { font-size: 0.9rem; font-weight: 600; color: #1a1a2e; }
+.form-card { background: white; border-radius: 20px; padding: 36px; box-shadow: 0 6px 24px rgba(0,0,0,0.07); border: 1px solid #f0f0f0; }
+.form-card h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 24px; }
+.form-group { margin-bottom: 18px; }
+.form-label { font-size: 0.75rem; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; display: block; }
+.form-input, .form-textarea { width: 100%; padding: 12px 16px; border: 1.5px solid #e5e7eb; border-radius: 10px; font-family: inherit; font-size: 0.92rem; color: #1a1a2e; outline: none; transition: border-color .2s; }
+.form-input:focus, .form-textarea:focus { border-color: #7C3AED; }
+.form-textarea { min-height: 130px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.submit-btn { width: 100%; background: #7C3AED; color: white; padding: 14px; border-radius: 10px; font-weight: 700; font-size: 0.95rem; border: none; cursor: pointer; margin-top: 6px; transition: background .2s, transform .2s; }
+.submit-btn:hover { background: #6D28D9; transform: translateY(-2px); }
+.success-msg { display: none; background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; padding: 14px 18px; border-radius: 10px; font-size: 0.88rem; font-weight: 600; margin-top: 14px; text-align: center; }
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
+  .page-header { padding: 40px 24px; }
+  .content { grid-template-columns: 1fr; padding: 40px 20px; }
+  .form-row { grid-template-columns: 1fr; }
+  .nav-links li:nth-child(2),.nav-links li:nth-child(3),.nav-links li:nth-child(4) { display: none; }
+}
+
+/* hamburger */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #1a1a2e; border-radius: 2px; transition: all .3s; }
+.mobile-menu {
+  display: none; position: fixed; top: 68px; left: 0; right: 0;
+  background: #fff; border-bottom: 1px solid #e5e7eb;
+  padding: 16px 24px; flex-direction: column; gap: 4px;
+  z-index: 998; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a { color: #374151; text-decoration: none; font-size: 0.95rem; font-weight: 500; padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+.mobile-menu a:last-child { border-bottom: none; color: #7C3AED; font-weight: 700; }
+.mobile-menu a:hover { color: #7C3AED; }
+
+/* ── TABLET ── */
+@media (max-width: 1024px) {
+  nav { padding: 0 28px; }
+  .nav-links { gap: 14px; }
+  .nav-links a { font-size: 0.82rem; }
+  .content, .page-header { padding-left: 28px; padding-right: 28px; }
+}
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 16px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .page-header { padding: 32px 20px 0; }
+  .page-header h1 { font-size: 1.7rem; }
+  .content { padding: 28px 16px; }
+  .bio-grid, .edu-cards, .interests-grid, .tags-grid, .conf-cards { grid-template-columns: 1fr !important; }
+  .about-banner { flex-direction: column; padding: 40px 20px; gap: 20px; text-align: center; }
+  .banner-text h1 { font-size: 1.6rem; }
+  .section-heading { font-size: 1.4rem; }
+  .tl-card { padding: 20px; }
+  .stats-bar { flex-wrap: wrap; }
+  .stat { flex: 1 1 50%; border-bottom: 1px solid #f0f0f0; }
+  .stat:nth-child(2) { border-right: none; }
+  .articles-grid { grid-template-columns: 1fr !important; }
+  .grid { grid-template-columns: repeat(2,1fr) !important; }
+  .content { max-width: 100%; }
+  .form-row { grid-template-columns: 1fr !important; }
+  .top-bar { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .upload-bar { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .tabs { gap: 4px; }
+  .tab { padding: 8px 12px; font-size: 0.78rem; }
+  .edu-cards { grid-template-columns: 1fr !important; }
+  .interests-grid { grid-template-columns: 1fr 1fr !important; }
+  .skill-group { padding: 20px; }
+  .pub-card { padding: 20px; }
+  .conf-cards { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 480px) {
+  .interests-grid { grid-template-columns: 1fr !important; }
+  .grid { grid-template-columns: 1fr 1fr !important; }
+  .banner-tags { justify-content: center; }
+}
+</style>
+</head>
+<body>
+{% include nav.html %}
+<div class="page">
+  <div class="page-header">
+    <h1>{{ page.page_title }}</h1>
+    <p>{{ page.page_subtitle }}</p>
+  </div>
+  <div class="content">
+    <div>
+      <div class="section-title">Contact</div>
+      <div class="section-heading">Let's Collaborate</div>
+      <div class="section-sub">{{ page.intro_text }}</div>
+      <div class="contact-links">
+        <a href="mailto:{{ page.email }}" class="contact-link"><div class="cl-icon">✉️</div><div><div class="cl-label">Email</div><div class="cl-value">{{ page.email }}</div></div></a>
+        <a href="tel:{{ page.phone_link }}" class="contact-link"><div class="cl-icon">📞</div><div><div class="cl-label">Phone</div><div class="cl-value">{{ page.phone }}</div></div></a>
+        <a href="{{ page.linkedin_url }}" target="_blank" class="contact-link"><div class="cl-icon">💼</div><div><div class="cl-label">LinkedIn</div><div class="cl-value">{{ page.linkedin_label }}</div></div></a>
+        <a href="{{ page.facebook_url }}" target="_blank" class="contact-link"><div class="cl-icon">🔵</div><div><div class="cl-label">Facebook</div><div class="cl-value">{{ page.facebook_label }}</div></div></a>
+        <div class="contact-link" style="cursor:default"><div class="cl-icon">📍</div><div><div class="cl-label">Location</div><div class="cl-value">{{ page.location }}</div></div></div>
+      </div>
+    </div>
+    <div class="form-card">
+      <h3>Send a Message 💬</h3>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name</label><input class="form-input" id="fname" placeholder="John"/></div>
+        <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" id="lname" placeholder="Doe"/></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" id="email" type="email" placeholder="john@example.com"/></div>
+      <div class="form-group"><label class="form-label">Subject</label><input class="form-input" id="subject" placeholder="Research Collaboration"/></div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="message" placeholder="Tell me about your project or question..."></textarea></div>
+      <button class="submit-btn" onclick="sendMsg()">Send Message →</button>
+      <div class="success-msg" id="successMsg">✅ Message sent! I'll get back to you soon.</div>
+    </div>
+  </div>
+</div>
+<script>
+function sendMsg() {
+  var f = document.getElementById('fname').value.trim();
+  var e = document.getElementById('email').value.trim();
+  var m = document.getElementById('message').value.trim();
+  if (!f || !e || !m) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+  var subject = document.getElementById('subject').value.trim() || 'Website contact form';
+  var lname = document.getElementById('lname').value.trim();
+  var body = 'From: ' + f + ' ' + lname + ' (' + e + ')%0D%0A%0D%0A' + m;
+  window.location.href = 'mailto:{{ page.email }}?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(m);
+  document.getElementById('successMsg').style.display = 'block';
+}
+</script>
+</body>
+</html>

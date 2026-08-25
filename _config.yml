@@ -1,0 +1,13 @@
+title: "S. M. Iqbal Mahamud — Microbiologist & Bioinformatician"
+description: "Microbiologist and computational biologist — bacteriophage biology, microbial genomics, and phage-host interactions."
+url: ""
+baseurl: ""
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json

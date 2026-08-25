@@ -1,0 +1,37 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" class="nav-brand">
+    <div class="nav-circle">I</div>
+    <span class="nav-name">Iqbal Mahamud</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active"{% endif %}>About</a></li>
+    <li><a href="{{ '/skills.html' | relative_url }}" {% if page.url == '/skills.html' %}class="active"{% endif %}>Skills</a></li>
+    <li><a href="{{ '/experience.html' | relative_url }}" {% if page.url == '/experience.html' %}class="active"{% endif %}>Experience</a></li>
+    <li><a href="{{ '/publications.html' | relative_url }}" {% if page.url == '/publications.html' %}class="active"{% endif %}>Publications</a></li>
+    <li><a href="{{ '/gallery.html' | relative_url }}" {% if page.url == '/gallery.html' %}class="active"{% endif %}>Gallery</a></li>
+    <li><a href="{{ '/writing.html' | relative_url }}" {% if page.url == '/writing.html' %}class="active"{% endif %}>Writing</a></li>
+    <li><a href="{{ '/contact.html' | relative_url }}" class="nav-cta {% if page.url == '/contact.html' %}active{% endif %}">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about.html' | relative_url }}">About</a>
+  <a href="{{ '/skills.html' | relative_url }}">Skills</a>
+  <a href="{{ '/experience.html' | relative_url }}">Experience</a>
+  <a href="{{ '/publications.html' | relative_url }}">Publications</a>
+  <a href="{{ '/gallery.html' | relative_url }}">Gallery</a>
+  <a href="{{ '/writing.html' | relative_url }}">Writing</a>
+  <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+</div>
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobileMenu');
+  var btn = document.querySelector('.hamburger');
+  if (menu && btn && !menu.contains(e.target) && !btn.contains(e.target)) menu.classList.remove('open');
+});
+</script>
